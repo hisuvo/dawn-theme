@@ -1,0 +1,41 @@
+### Layout folder insede
+
+- password.liquid
+- theme.liquid
+
+### templates
+
+- gift_card.liquid
+
+====================
+{
+"sections": {},
+"order": []
+}
+====================
+
+- index.json
+- page.json
+
+### config
+
+- setting_data.json
+- setting_schema.json
+
+### assets
+
+- this folder inside containe image, cssfile etc
+
+### For run tailwind then use
+
+- {{output.css | asset_url | stylesheet_tag}} it include of header
+- npx @tailwindcss/cli -i ./assets/input.css -o ./assets/tailwind.css --watch
+
+### snippets
+
+- it use for reuseability, maintainabillity, readablility, Fast Loading, Eser Debbug
+- If you want to render another place thenuse {% render "commponents name" %}
+
+### section
+
+- It use for dinamical render

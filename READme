@@ -1,0 +1,18 @@
+### install useing
+
+- npm install tailwindcss @tailwindcss/cli
+
+### create two file inside of asset folder
+
+- input.css [ here include import tailwindcss]
+- output.css [ here inclue all style code]
+
+### when this website style tailwindcss then use blow command for show
+
+- npx @tailwindcss/cli -i ./assets/input.css -o ./assets/output.css --watch
+
+### At last template.liquid file include blow command must be in header
+
+# - {{ 'output.css' | asset_url | stylesheet_tag }} or {{'style.css | asset_url | stylesheet_tag}}
+
+### Note: components name not be cmaleCase for example homePage.liquid that is worng.then current is hoempage.liquid

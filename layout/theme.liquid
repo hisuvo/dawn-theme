@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    {{
+      content_for_header
+    }}
+    {{
+      "output.css" | asset_url | stylesheet_tag
+    }}
+    {{
+      "styles.css" | asset_url | stylesheet_tag
+    }}
+  </head>
+  <body>
+    <header>{% render "header" %}</header>
+    <main>{% render "homepage" %}</main>
+
+    {{ content_for_layout }}
+
+    {% render 'footer' %}
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<main class="pt-10">
+  <!-- hero banner section -->
+  <div
+    class="container flex flex-col-reverse md:flex-row justify-center items-center"
+  >
+    <div class="w-1/2">
+      <h2 class="text-6xl font-bold">FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
+      <p class="text-base font-normal py-4">
+        Browse through our diverse range of meticulously crafted garments,
+        designed to bring out your individuality and cater to your sense of
+        style.
+      </p>
+      <button class="btn">Shop Now</button>
+      <div class="flex gap-4 mt-6">
+        {% for i in (1..3)%}
+        <div class="w-1/3">
+          <h2 class="text-[40px] font-bold">200+</h2>
+          <p>International Brands</p>
+        </div>
+        {%endfor%}
+      </div>
+    </div>
+    <div class="w-1/2 flex justify-end items-end">
+      <figure>
+        <img src="../assets/banner_img.png" alt="" />
+      </figure>
+    </div>
+  </div>
+
+  <!-- group sponcer section -->
+  <div class="bg-black">
+    <div class="container">
+      <div class="flex justify-center items-center py-4">
+        {% for i in (1..5)%}
+        <figure class="w-1/5">
+          <img src="../assets/Group.png" alt="" />
+        </figure>
+        {% endfor%}
+      </div>
+    </div>
+  </div>
+
+  <!-- New Arrivlas section -->
+  <div class="pt-20">
+    <div class="container">
+      <h2 class="section_header text-center uppercase">New Arrivals</h2>
+      <div class="flex gap-4 pt-12">
+        {%for i in (1..4)%}
+        <div
+          class="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"
+        >
+          <img
+            src="../assets/t-shirt.png"
+            alt=""
+            class="object-cover object-center w-full rounded-t-md h-72"
+          />
+          <div class="flex flex-col justify-between p-6 space-y-8">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-semibold tracking-wide">
+                Donec lectus leo
+              </h2>
+              <p className="dark:text-gray-800">
+                Curabitur luctus erat nunc, sed ullamcorper erat vestibulum
+                eget.
+              </p>
+            </div>
+            <button
+              type="button"
+              class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+        {%endfor%}
+      </div>
+      <div class="flex justify-center items-center pt-16">
+        <button class="btn_sec">View All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Arrivlas section -->
+  <div class="pt-20">
+    <div class="container">
+      <h2 class="section_header text-center uppercase">top selling</h2>
+      <div class="flex gap-4 pt-12">
+        {%for i in (1..4)%}
+        <div
+          class="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"
+        >
+          <img
+            src="../assets/shirt.png"
+            alt=""
+            class="object-cover object-center w-full rounded-t-md h-72"
+          />
+          <div class="flex flex-col justify-between p-6 space-y-8">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-semibold tracking-wide">
+                Donec lectus leo
+              </h2>
+              <p class="dark:text-gray-800">
+                Curabitur luctus erat nunc, sed ullamcorper erat vestibulum
+                eget.
+              </p>
+            </div>
+            <button
+              type="button"
+              class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+        {%endfor%}
+      </div>
+      <div class="flex justify-center items-center pt-16">
+        <button class="btn_sec">View All</button>
+      </div>
+    </div>
+  </div>
+</main>
