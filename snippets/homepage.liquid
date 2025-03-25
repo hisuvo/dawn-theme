@@ -50,26 +50,33 @@
           class="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"
         >
           <img
-            src="../assets/t-shirt.png"
+            src="{{ 't-shirt.png' | asset_url }}"
             alt=""
             class="object-cover object-center w-full rounded-t-md h-72"
           />
           <div class="flex flex-col justify-between p-6 space-y-8">
             <div class="space-y-2">
-              <h2 class="text-3xl font-semibold tracking-wide">
+              <h2 class="text-xl font-semibold tracking-wide">
                 Donec lectus leo
               </h2>
-              <p className="dark:text-gray-800">
-                Curabitur luctus erat nunc, sed ullamcorper erat vestibulum
-                eget.
+              <p class="flex gap-1">
+                {%for i in (1..5)%}
+                <svg
+                  width="23"
+                  height="21"
+                  viewBox="0 0 23 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                {%endfor%}
               </p>
+              <p class="text-lg font-bold dark:text-gray-800">$26</p>
             </div>
-            <button
-              type="button"
-              class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50"
-            >
-              Read more
-            </button>
           </div>
         </div>
         {%endfor%}
@@ -90,32 +97,51 @@
           class="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"
         >
           <img
-            src="../assets/shirt.png"
+            src="{{ 'shirt.png' | asset_url }}"
             alt=""
             class="object-cover object-center w-full rounded-t-md h-72"
           />
           <div class="flex flex-col justify-between p-6 space-y-8">
             <div class="space-y-2">
-              <h2 class="text-3xl font-semibold tracking-wide">
+              <h2 class="text-xl font-semibold tracking-wide">
                 Donec lectus leo
               </h2>
-              <p class="dark:text-gray-800">
-                Curabitur luctus erat nunc, sed ullamcorper erat vestibulum
-                eget.
+              <p class="flex gap-1">
+                {%for i in (1..5)%}
+                <svg
+                  width="23"
+                  height="21"
+                  viewBox="0 0 23 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                {%endfor%}
               </p>
+              <p class="text-lg font-bold dark:text-gray-800">$26</p>
             </div>
-            <button
-              type="button"
-              class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50"
-            >
-              Read more
-            </button>
           </div>
         </div>
         {%endfor%}
       </div>
       <div class="flex justify-center items-center pt-16">
         <button class="btn_sec">View All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dress Style -->
+  <div class="pt-20">
+    <div class="container">
+      <div class="bg-gray-200 rounded-xl py-[70px]">
+        <h2 class="section_header text-center uppercase">
+          BROWSE BY dress STYLE
+        </h2>
+        <div class="px-16"></div>
       </div>
     </div>
   </div>
