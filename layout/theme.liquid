@@ -16,13 +16,8 @@
     }}
   </head>
   <body>
-    <header>{% render "header" %}</header>
-    <main>{% render "homepage" %}</main>
-
+    {% render "header" %}
     {{ content_for_layout }}
-
-    {% render "newletters" %}
-
-    <footer>{% render 'footer' %}</footer>
+    {% render "homepage" %} {% render "newletters" %} {% render 'footer' %}
   </body>
 </html>

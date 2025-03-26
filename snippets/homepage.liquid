@@ -22,7 +22,9 @@
     </div>
     <div class="w-1/2 flex justify-end items-end">
       <figure>
-        <img src="../assets/banner_img.png" alt="" />
+        <!-- don't work -->
+        <!-- <img src="../assets/banner_img.png" alt="" /> -->
+        <img src="{{ 'banner_img.png' | asset_url }}" alt="" />
       </figure>
     </div>
   </div>
@@ -33,7 +35,7 @@
       <div class="flex justify-center items-center py-4">
         {% for i in (1..5)%}
         <figure class="w-1/5">
-          <img src="../assets/Group.png" alt="" />
+          <img src="{{ 'Group.png' | asset_url }}" alt="" />
         </figure>
         {% endfor%}
       </div>
@@ -44,7 +46,7 @@
   <div class="pt-20">
     <div class="container">
       <h2 class="section_header text-center uppercase">New Arrivals</h2>
-      <div class="flex gap-4 pt-12">
+      <div class="flex justify-center items-center gap-4 pt-12">
         {%for i in (1..4)%}
         <div
           class="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"
@@ -91,7 +93,7 @@
   <div class="pt-20">
     <div class="container">
       <h2 class="section_header text-center uppercase">top selling</h2>
-      <div class="flex gap-4 pt-12">
+      <div class="flex justify-center items-center gap-4 pt-12">
         {%for i in (1..4)%}
         <div
           class="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"

@@ -16,3 +16,17 @@
 # - {{ 'output.css' | asset_url | stylesheet_tag }} or {{'style.css | asset_url | stylesheet_tag}}
 
 ### Note: components name not be cmaleCase for example homePage.liquid that is worng.then current is hoempage.liquid
+
+<!-- index.json start-->
+
+/\* _ ------------------------------------------------------------ _ IMPORTANT:
+The contents of this file are auto-generated. \* _ This file may be updated by
+the Shopify admin theme editor _ or related systems. Please exercise caution as
+any changes _ made to this file may be overwritten. _
+------------------------------------------------------------ \*/
+// {
+// "sections": {},
+// "order": []
+// }
+
+<!-- index.json end -->
